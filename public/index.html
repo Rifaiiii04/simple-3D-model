@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add My 3D Model</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-mono">
+    <header
+      class="p-5 text-center bg-gradient-to-r from-purple-600 to-blue-500"
+    >
+      <h1 class="text-3xl font-bold">My Blender 3D Model Showcase</h1>
+      <p class="mt-2 text-sm">
+        A 3D character model created using Blender and displayed with Model
+        Viewer.
+      </p>
+    </header>
+    <main class="flex justify-center items-center min-h-screen">
+      <div class="w-full max-w-4xl p-4">
+        <model-viewer
+          src="model/model3D.glb"
+          alt="3D model"
+          camera-controls
+          autoplay
+          class="w-full h-[90vh] rounded-lg shadow-lg bg-slate-700"
+        ></model-viewer>
+      </div>
+    </main>
+    <footer
+      class="rounded p-3 text-center bg-gradient-to-r from-purple-600 to-red-400 w-full h-20"
+    >
+      <h4 class="text-xl">My Social Media</h4>
+      <ul class="flex justify-center items-center gap-5">
+        <li>
+          <a
+            href="https://www.facebook.com/ericko.anjaymabar"
+            class="text-2xl hover:text-blue-800"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/muhamad-rifai-553a212a7"
+            class="text-2xl hover:text-blue-800"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/mr.user404_?igsh=eTF2djZuNTJmdmd5"
+            class="text-2xl hover:text-purple-800"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
